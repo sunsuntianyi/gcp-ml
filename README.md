@@ -1,5 +1,5 @@
 # gcp-ml
-This is the implementation of the Inception neural network model using GCP, Docker, NodeJS, MongoDB, TF
+This is the implementation of the Inception neural network model using GCP(Compute Engine, Kubernetes clusters), Docker, NodeJS, MongoDB, TF
 
 
 You can access it here:
