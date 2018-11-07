@@ -1,0 +1,23 @@
+version: '3'
+services:
+  web:
+    image: gcr.io/mlwebapp-inception-lite/mlwebapp
+    ports:
+      - "3000:3000"
+
+    depends_on: 
+      - db
+    environment:
+      - MONGO_DB_URI=mongodb://db/inception
+
+  db:
+    image: gcr.io/mlwebapp-inception-lite/mongo
+    ports:
+      - "27017:27017"
+
+  nginx:
+    image: gcr.io/mlwebapp-inception-lite/nginx
+    ports:
+      - "8080:8080"
+    depends_on:
+      - web
