@@ -4,4 +4,4 @@ This is the implementation of the Inception neural network model using GCP(Compu
 
 You can access it here:
 
-# http://35.243.234.254:3000 (server is up and running)
+# http://35.243.234.254:3000 (server is current down for maintainance (will be up before Dec 15))
