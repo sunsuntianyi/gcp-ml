@@ -1,7 +1,7 @@
 version: '3'
 services:
   web:
-    image: gcr.io/mlwebapp-inception-lite/mlwebapp
+    image: gcr.io/mlwebapp-inception-lite/mlwebapp-slim
     ports:
       - "3000:3000"
 
@@ -16,7 +16,7 @@ services:
       - "27017:27017"
 
   nginx:
-    image: gcr.io/mlwebapp-inception-lite/nginx
+    image: gcr.io/mlwebapp-inception-lite/nginx:alpine
     ports:
       - "8080:8080"
     depends_on:

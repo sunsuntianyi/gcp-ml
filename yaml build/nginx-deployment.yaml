@@ -18,7 +18,7 @@ spec:
         io.kompose.service: nginx
     spec:
       containers:
-      - image: gcr.io/mlwebapp-inception-lite/nginx
+      - image: gcr.io/mlwebapp-inception-lite/nginx:alpine
         name: nginx
         ports:
         - containerPort: 8080

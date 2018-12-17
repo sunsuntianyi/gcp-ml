@@ -21,7 +21,7 @@ spec:
       - env:
         - name: MONGO_DB_URI
           value: mongodb://db/inception
-        image: gcr.io/mlwebapp-inception-lite/mlwebapp
+        image: gcr.io/mlwebapp-inception-lite/mlwebapp-slim
         name: web
         ports:
         - containerPort: 3000
